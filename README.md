@@ -7,12 +7,12 @@ references.
 - Develop an iOS app that animates various sorting algorithms. 
 - The two views can animate two different algorithms simultaneously using the same data.
 
-Before Sorting:  
-![N|Solid](https://github.com/riazmind/Algorithm-Animation-MultiThreading/blob/master/screenshots/afterSorting.png)
-
-After Sorting: 
+## Before Sorting:  
 ![N|Solid](https://github.com/riazmind/Algorithm-Animation-MultiThreading/blob/master/screenshots/beforeSorting.png)
 
+## After Sorting: 
+
+![N|Solid](https://github.com/riazmind/Algorithm-Animation-MultiThreading/blob/master/screenshots/afterSorting.png)
 
 ## Specific Requirements
 1. Implement several common sorting algorithms to sort an array of integers.
