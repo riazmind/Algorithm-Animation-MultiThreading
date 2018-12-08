@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RiazMAlgorithmAnimationAndMultiThreading" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="exF-H3-XFc" customClass="ArrayView" customModule="RiazMAlgorithmAnimationAndMultiThreading" customModuleProvider="target">
+                                <rect key="frame" x="16" y="148" width="343" height="214"/>
+                                <subviews>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="fl0-Ho-Al0">
+                                        <rect key="frame" x="1" y="1" width="37" height="37"/>
+                                        <color key="backgroundColor" red="0.58105844259999995" green="0.12855249639999999" blue="0.57453137639999996" alpha="1" colorSpace="deviceRGB"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="214" id="1I7-qc-UnH"/>
+                                    <constraint firstItem="fl0-Ho-Al0" firstAttribute="leading" secondItem="exF-H3-XFc" secondAttribute="leading" constant="1" id="Kk4-J7-KhJ"/>
+                                    <constraint firstItem="fl0-Ho-Al0" firstAttribute="top" secondItem="exF-H3-XFc" secondAttribute="top" constant="1" id="kye-kO-096"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zpz-qv-7pc" customClass="ArrayView" customModule="RiazMAlgorithmAnimationAndMultiThreading" customModuleProvider="target">
+                                <rect key="frame" x="16" y="422" width="343" height="214"/>
+                                <subviews>
+                                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Vmf-dy-Nso">
+                                        <rect key="frame" x="1" y="1" width="37" height="37"/>
+                                        <color key="backgroundColor" red="0.46371770670000001" green="0.1922026973" blue="0.94353141190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </activityIndicatorView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="Vmf-dy-Nso" firstAttribute="leading" secondItem="zpz-qv-7pc" secondAttribute="leading" constant="1" id="1MW-0I-rN4"/>
+                                    <constraint firstItem="Vmf-dy-Nso" firstAttribute="top" secondItem="zpz-qv-7pc" secondAttribute="top" constant="1" id="EaV-cQ-9Eb"/>
+                                    <constraint firstAttribute="height" constant="214" id="axP-0k-qJG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="1" green="0.57160735539999996" blue="0.12794761330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZk-La-BhX">
+                                <rect key="frame" x="16" y="60" width="30" height="30"/>
+                                <state key="normal" title="Sort"/>
+                                <connections>
+                                    <action selector="sortArray:" destination="BYZ-38-t0r" eventType="touchUpInside" id="f7B-e6-js0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yBZ-3L-5sr">
+                                <rect key="frame" x="62" y="60" width="50" height="30"/>
+                                <state key="normal" title="Shuffle"/>
+                                <connections>
+                                    <action selector="shuffleArray:" destination="BYZ-38-t0r" eventType="touchUpInside" id="In6-Kf-JLp"/>
+                                </connections>
+                            </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yOn-kE-s0x">
+                                <rect key="frame" x="232" y="60" width="127" height="29"/>
+                                <segments>
+                                    <segment title="16"/>
+                                    <segment title="32"/>
+                                    <segment title="48"/>
+                                    <segment title="64"/>
+                                </segments>
+                                <connections>
+                                    <action selector="changeArraySize:" destination="BYZ-38-t0r" eventType="valueChanged" id="DC1-Y9-AjF"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="yEj-0c-H59">
+                                <rect key="frame" x="16" y="378" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Insertion"/>
+                                    <segment title="Selection"/>
+                                    <segment title="Quick Sort"/>
+                                    <segment title="Merge Sort"/>
+                                </segments>
+                                <connections>
+                                    <action selector="selectSecondAlgorithm:" destination="BYZ-38-t0r" eventType="valueChanged" id="vb0-Qx-gEq"/>
+                                </connections>
+                            </segmentedControl>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="79w-8c-rv5">
+                                <rect key="frame" x="16" y="104" width="343" height="29"/>
+                                <segments>
+                                    <segment title="Insertion"/>
+                                    <segment title="Selection"/>
+                                    <segment title="Quick Sort"/>
+                                    <segment title="Merge Sort"/>
+                                </segments>
+                                <connections>
+                                    <action selector="selectFirstAlgorithm:" destination="BYZ-38-t0r" eventType="valueChanged" id="5yF-tb-KRo"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="N =" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NNc-HQ-t9c">
+                                <rect key="frame" x="196.66666666666666" y="60" width="27.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Chl-u5-qmQ">
+                                <rect key="frame" x="130" y="60" width="32" height="30"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopSortingNow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="95q-jl-mYV"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zpz-qv-7pc" secondAttribute="trailing" constant="16" id="5zM-z4-C9S"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yOn-kE-s0x" secondAttribute="trailing" constant="16" id="8Ao-cJ-kEQ"/>
+                            <constraint firstItem="zpz-qv-7pc" firstAttribute="top" secondItem="yEj-0c-H59" secondAttribute="bottom" constant="16" id="9V0-yY-Ohp"/>
+                            <constraint firstItem="79w-8c-rv5" firstAttribute="top" secondItem="yOn-kE-s0x" secondAttribute="bottom" constant="16" id="Ecq-SZ-tOO"/>
+                            <constraint firstItem="yBZ-3L-5sr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="HbU-HX-G7v"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yEj-0c-H59" secondAttribute="trailing" constant="16" id="I8A-AA-mos"/>
+                            <constraint firstItem="exF-H3-XFc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="IgL-nZ-yH5"/>
+                            <constraint firstItem="yOn-kE-s0x" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="LBw-vE-XCI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="exF-H3-XFc" secondAttribute="trailing" constant="16" id="Lpx-c6-n3L"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yBZ-3L-5sr" secondAttribute="trailing" constant="20" symbolic="YES" id="Nau-oe-lNm"/>
+                            <constraint firstItem="yEj-0c-H59" firstAttribute="top" secondItem="exF-H3-XFc" secondAttribute="bottom" constant="16" id="SRi-pO-Kmf"/>
+                            <constraint firstItem="exF-H3-XFc" firstAttribute="top" secondItem="79w-8c-rv5" secondAttribute="bottom" constant="16" id="TnT-TI-XSK"/>
+                            <constraint firstItem="79w-8c-rv5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Vf8-II-Dvk"/>
+                            <constraint firstItem="yOn-kE-s0x" firstAttribute="leading" secondItem="NNc-HQ-t9c" secondAttribute="trailing" constant="8" id="Xir-Qi-Lo1"/>
+                            <constraint firstItem="dZk-La-BhX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="b2I-1N-f5K"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Chl-u5-qmQ" secondAttribute="trailing" constant="20" symbolic="YES" id="ctj-d7-H7S"/>
+                            <constraint firstItem="Chl-u5-qmQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="hRE-cJ-hXx"/>
+                            <constraint firstItem="dZk-La-BhX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="j0z-Vb-lzn"/>
+                            <constraint firstItem="yEj-0c-H59" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="kRE-bN-tkI"/>
+                            <constraint firstItem="NNc-HQ-t9c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="mw0-jy-8iZ"/>
+                            <constraint firstItem="zpz-qv-7pc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="422" id="ojg-ec-Tfe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="79w-8c-rv5" secondAttribute="trailing" constant="16" id="rz0-FN-Qby"/>
+                            <constraint firstItem="yBZ-3L-5sr" firstAttribute="leading" secondItem="dZk-La-BhX" secondAttribute="trailing" constant="16" id="s3k-fK-9fq"/>
+                            <constraint firstItem="zpz-qv-7pc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ujj-fy-7z1"/>
+                            <constraint firstItem="NNc-HQ-t9c" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="vLG-AX-hoY"/>
+                            <constraint firstItem="Chl-u5-qmQ" firstAttribute="leading" secondItem="yBZ-3L-5sr" secondAttribute="trailing" constant="18" id="xEn-0D-h0B"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="arrayView" destination="exF-H3-XFc" id="oOR-zF-uST"/>
+                        <outlet property="arrayView2" destination="zpz-qv-7pc" id="iP2-4u-Ydo"/>
+                        <outlet property="indicator1" destination="fl0-Ho-Al0" id="pea-ig-890"/>
+                        <outlet property="indicator2" destination="Vmf-dy-Nso" id="XMt-dB-0xJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="87.931034482758619"/>
+        </scene>
+    </scenes>
+</document>
